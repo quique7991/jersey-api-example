@@ -47,6 +47,7 @@ public class UsersWebService {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public User saveUser(User user) {
+    	System.out.println(user.getName());
         return store.save(user);
     }
 
